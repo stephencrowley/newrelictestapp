@@ -30,5 +30,9 @@
 
   <strong>Ajax Response</strong>:
   <div id="ajaxGetUserServletResponse"></div>
+
+<p>Source is available at
+https://github.com/stephencrowley/newrelictestapp</p>
+
 </body>
 </html>
