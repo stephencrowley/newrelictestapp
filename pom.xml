@@ -21,9 +21,15 @@
       <version>6.0</version>
       <scope>provided</scope>
     </dependency>
+    <dependency>
+        <groupId>com.newrelic.agent.java</groupId>
+        <artifactId>newrelic-agent</artifactId>
+        <version>3.46.0</version>
+        <scope>provided</scope>
+    </dependency>
   </dependencies>
   <build>
-    <finalName>webappRunnerSample</finalName>
+    <finalName>newRelicTestApp</finalName>
     <plugins>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
@@ -47,5 +53,46 @@
             </executions>
         </plugin>
     </plugins>
+    <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-war-plugin -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.1.0</version>
+        <configuration>
+          <failOnMissingWebXml>false</failOnMissingWebXml>
+        </configuration>
+      </plugin>
+
+      <!-- Unzip New Relic Java agent into project.build.directory -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <version>3.0.0</version>
+        <executions>
+          <execution>
+            <id>unpack-zip</id>
+            <phase>prepare-package</phase>
+            <goals>
+              <goal>unpack-dependencies</goal>
+            </goals>
+            <configuration>
+              <artifactItems>
+                <artifactItem>
+                  <groupId>com.newrelic.agent.java</groupId>
+                  <artifactId>newrelic-java</artifactId>
+                  <version>3.38.0</version>
+                  <type>zip</type>
+                  <overWrite>true</overWrite>
+                  <outputDirectory>${project.build.directory}</outputDirectory>
+                  <destFileName>newrelic</destFileName>
+                </artifactItem>
+              </artifactItems>
+              <outputDirectory>${project.build.directory}</outputDirectory>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
   </build>
 </project>
+
+
