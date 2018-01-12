@@ -7,16 +7,25 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>jQuery, Ajax and Servlet/JSP integration example</title>
 
-<script src="http://code.jquery.com/jquery-1.10.2.js"
-  type="text/javascript"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
 <script src="js/app-ajax.js" type="text/javascript"></script>
 </head>
 <body>
 
   <form>
     Enter Your Name: <input type="text" id="userName" />
-    Enter Your DOB: <input type="text" id="day" /> <input type="text" id="month" /> <input type="text" id="year" />
   </form>
+
+  <p>Date: <input type="text" id="datepicker"></p>
+
   <br>
   <br>
 
