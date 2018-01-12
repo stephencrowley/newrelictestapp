@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -javaagent:/app/newrelic/newrelic.jar -jar target/dependency/webapp-runner.jar --port $PORT target/*.war
+web: java $JAVA_OPTS -javaagent:/newrelic/newrelic.jar -jar target/dependency/webapp-runner.jar --port $PORT target/*.war
