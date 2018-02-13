@@ -12,12 +12,16 @@ public class GetUserServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		String userName = request.getParameter("datepicker").trim();
+		String userName = request.getParameter("userName").trim();
 		if(userName == null || "".equals(userName)){
 			userName = "person";
 		}
+		String userName = request.getParameter("datepicker").trim();
+		if(datepicker == null || "".equals(datepicker)){
+			datepicker = "DOB";
+		}
 		
-		String greetings = "Hello " + userName;
+		String greetings = "Hello " + userName + datepicker;
 		
 		response.setContentType("text/plain");
 		response.getWriter().write(greetings);
