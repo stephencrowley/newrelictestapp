@@ -4,7 +4,7 @@ $(document).ready(function() {
                 var birthdate = $('#datepicker').val();
                 $.get('GetUserServlet', {
                         userName : name,
-                        userdate : birthdate
+                        userDate : birthdate
                 }, function(responseText) {
                         $('#ajaxGetUserServletResponse').text(responseText);
                 });
