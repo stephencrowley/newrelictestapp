@@ -14,10 +14,15 @@ public class GetUserServlet extends HttpServlet {
 
 		String userName = request.getParameter("userName").trim();
 		if(userName == null || "".equals(userName)){
-			userName = "Guest";
+			userName = "person";
 		}
 		
-		String greetings = "Hello " + userName;
+		String dayOfBirth = request.getParameter("userDate").trim();
+		if(userName == null || "".equals(userName)){
+			userName = "unknown";
+		}
+		
+		String greetings = "Hello " + userName +", you were born on " + dayOfBirth;
 		
 		response.setContentType("text/plain");
 		response.getWriter().write(greetings);
