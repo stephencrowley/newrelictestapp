@@ -1,6 +1,6 @@
 $(document).ready(function() {
         $('#userName').blur(function(event) {
-                var name = $('#userName').val() +" " +$('#datepicker').val();
+                var name = $('#datepicker').val(); //$('#userName').val()
                 $.get('GetUserServlet', {
                         userName : name
                 }, function(responseText) {
