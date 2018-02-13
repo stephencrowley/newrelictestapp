@@ -4,7 +4,7 @@ $(document).ready(function() {
                 var name = $('#userName').val()
                 $.get('GetUserServlet', {
                         userName : name,
-                        DOB: datePick                        
+                        datepicker: datePick                        
                 }, function(responseText) {
                         $('#ajaxGetUserServletResponse').text(responseText);
                 });
