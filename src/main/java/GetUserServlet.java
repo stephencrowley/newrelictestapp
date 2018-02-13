@@ -16,7 +16,7 @@ public class GetUserServlet extends HttpServlet {
 		if(userName == null || "".equals(userName)){
 			userName = "person";
 		}
-		String userName = request.getParameter("datepicker").trim();
+		String datepicker = request.getParameter("datepicker").trim();
 		if(datepicker == null || "".equals(datepicker)){
 			datepicker = "DOB";
 		}
