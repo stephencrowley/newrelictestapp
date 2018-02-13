@@ -1,6 +1,6 @@
 $(document).ready(function() {
         $('#datepicker').change(function(event) {
-                //var name = $('#datepicker').val(); //$('#userName').val()
+                var name = $('#datepicker').val(); //$('#userName').val()
                 $.get('GetUserServlet', {
                         datepicker : name
                 }, function(responseText) {
