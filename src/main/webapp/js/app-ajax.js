@@ -1,8 +1,8 @@
 $(document).ready(function() {
-        $('#userName').blur(function(event) {
+        $('#datepicker').change(function(event) {
                 //var name = $('#datepicker').val(); //$('#userName').val()
                 $.get('GetUserServlet', {
-                        userName : name
+                        datepicker : name
                 }, function(responseText) {
                         $('#ajaxGetUserServletResponse').text(responseText);
                 });
