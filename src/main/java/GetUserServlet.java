@@ -12,7 +12,7 @@ public class GetUserServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		String userName = request.getParameter("userName").trim();
+		String userName = request.getParameter("datepicker").trim();
 		if(userName == null || "".equals(userName)){
 			userName = "person";
 		}
@@ -22,5 +22,4 @@ public class GetUserServlet extends HttpServlet {
 		response.setContentType("text/plain");
 		response.getWriter().write(greetings);
 	}
-
 }
