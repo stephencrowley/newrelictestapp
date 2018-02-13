@@ -1,14 +1,12 @@
 $(document).ready(function() {
         $('#userName').blur(function(event) {
-                var name = $('#userName').val();
-                var birthdate = $('#datepicker').val();
+                var name = $('#userName').val() +" " $('#datepicker').val();
                 $.get('GetUserServlet', {
-                        userName : name,
-                        userDate : birthdate
+                        userName : name
                 }, function(responseText) {
                         $('#ajaxGetUserServletResponse').text(responseText);
                 });
-                alert( "Load was performed." + name+" "+birthdate)
+                alert( "Load was performed " + name);
                 
         });
 });
