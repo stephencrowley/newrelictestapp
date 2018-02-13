@@ -6,7 +6,6 @@ $(document).ready(function() {
                 }, function(responseText) {
                         $('#ajaxGetUserServletResponse').text(responseText);
                 });
-                alert( "Load was performed " + name);
                 
         });
 });
