@@ -22,7 +22,7 @@ public class GetUserServlet extends HttpServlet {
 			userName = "unknown";
 		}
 		
-		String greetings = "Hello " + userName +", you were born on " + dayOfBirth;
+		String greetings = "Hello " + userName + " you were born on " + dayOfBirth;
 		
 		response.setContentType("text/plain");
 		response.getWriter().write(greetings);
