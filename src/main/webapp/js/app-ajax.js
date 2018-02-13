@@ -8,5 +8,8 @@ $(document).ready(function() {
                 }, function(responseText) {
                         $('#ajaxGetUserServletResponse').text(responseText);
                 });
+                console.log(userName)
+                console.log(userDate)
+                
         });
 });
