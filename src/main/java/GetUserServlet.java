@@ -18,8 +18,8 @@ public class GetUserServlet extends HttpServlet {
 		}
 		
 		String dayOfBirth = request.getParameter("userDate").trim();
-		if(userName == null || "".equals(userName)){
-			userName = "unknown";
+		if(dayOfBirth == null || "".equals(dayOfBirth)){
+			dayOfBirth = "unknown";
 		}
 		
 		String greetings = "Hello " + userName + " you were born on " + dayOfBirth;
