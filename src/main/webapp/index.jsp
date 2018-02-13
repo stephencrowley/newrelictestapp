@@ -23,7 +23,7 @@
     Enter Your Name: <input type="text" id="userName" />
   </form>
 
-  <!--<p>Date: <input type="text" id="datepicker"></p>-->
+  <p>Date: <input type="text" id="datepicker"></p>
 
   <br>
   <br>
