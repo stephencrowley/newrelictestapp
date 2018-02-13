@@ -17,7 +17,7 @@ public class GetUserServlet extends HttpServlet {
 			userName = "person";
 		}
 		
-		String greetings = "Hello " + userName
+		String greetings = "Hello " + userName;
 		
 		response.setContentType("text/plain");
 		response.getWriter().write(greetings);
