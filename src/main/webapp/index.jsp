@@ -30,4 +30,3 @@
       </p>
    </body>
 </html>
-COPY TO CLIPBOARD	 SELECT ALL
