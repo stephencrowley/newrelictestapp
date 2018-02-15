@@ -62,7 +62,6 @@ public class GetUserServlet extends HttpServlet {
   } catch (ParseException e) {
 	  e.printStackTrace();
   }
- }
 
 
 
@@ -70,5 +69,4 @@ public class GetUserServlet extends HttpServlet {
 
  response.setContentType("text/plain");
  response.getWriter().write(greetings);
-}
-}
+}}
