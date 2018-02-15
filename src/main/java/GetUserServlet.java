@@ -11,7 +11,7 @@ import java.util.Calendar;
 
 @WebServlet("/GetUserServlet")
 public class GetUserServlet extends HttpServlet {
- private static final long serialVersionUID = 1 L;
+ private static final long serialVersionUID = 1L;
 
  protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
