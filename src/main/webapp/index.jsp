@@ -11,8 +11,11 @@
       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
       <script>
          $( function() {
-           $( "#datepicker" ).datepicker();
-         } );
+               $( "#datepicker" ).datepicker({
+                  changeMonth: true,
+                  changeYear: true
+               });
+         });
       </script>
       <script src="js/app-ajax.js" type="text/javascript"></script>
    </head>
