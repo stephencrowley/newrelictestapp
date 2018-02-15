@@ -31,7 +31,7 @@ public class GetUserServlet extends HttpServlet {
    System.out.println(formatter.format(date));
    System.out.println(dayOfWeek);
 
-   String mondaysChild;
+   String mondaysChild = "No month chosen";
 
    switch (dayOfWeek) {
     case 1:
