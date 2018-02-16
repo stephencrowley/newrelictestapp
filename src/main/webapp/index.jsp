@@ -20,6 +20,7 @@
       <script src="js/app-ajax.js" type="text/javascript"></script>
    </head>
    <body>
+      <center>
       <form>
          Enter Your Name: <input type="text" id="userName" />
       </form>
@@ -31,5 +32,6 @@
       <p>Source is available at
          https://github.com/stephencrowley/newrelictestapp
       </p>
+      </center>
    </body>
 </html>
